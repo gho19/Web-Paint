@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grant's Web Painting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="g.png"/>
+    <script src="colorpicker.min.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <h1>Grant's Web Painting</h1>
+    <p>Scroll down to draw on the canvas below!</p>
+    <canvas id="picker" id="draw"></canvas>
+
+
+      <!-- Default Color -->
+      <input id="color" value="#000000">
+      <hr></hr>
+      <script>
+          new KellyColorPicker({place : 'picker', input : 'color', size : 125});
+        </script>
+
+      <canvas id="draw"></canvas>
+      <script src="app.js"></script>
+
+  </div>
+</body>
+
+</html>
